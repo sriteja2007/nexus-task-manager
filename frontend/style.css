@@ -1,0 +1,144 @@
+/* 🌈 Global Styling */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #ffffff;
+  margin: 0;
+  padding: 20px;
+}
+
+/* 🌟 Title */
+h1 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 25px;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+
+/* 📊 Dashboard Stats */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  width: 150px;
+  text-align: center;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.stat-card h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* 📦 Container */
+.container {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  backdrop-filter: blur(10px);
+}
+
+/* 📝 Inputs */
+input, select {
+  padding: 12px;
+  width: 28%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: rgba(255,255,255,0.25);
+  color: #fff;
+}
+
+input::placeholder {
+  color: #f0f0f0;
+}
+
+button {
+  padding: 12px 18px;
+  background: #00eaff;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* 📋 Task List */
+#taskList {
+  margin-top: 20px;
+}
+
+/* 🎨 Task Card */
+.task {
+  background: rgba(255, 255, 255, 0.25);
+  padding: 15px;
+  margin: 12px 0;
+  border-radius: 12px;
+  border-left: 6px solid #00ffc8;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+}
+
+.task:hover {
+  transform: translateY(-5px);
+}
+
+/* 🔥 Priority Colors */
+.priority-low {
+  border-left-color: #2bff88;
+}
+.priority-medium {
+  border-left-color: #ffe600;
+}
+.priority-high {
+  border-left-color: #ff4f4f;
+}
+
+/* 📈 Progress Bar Container */
+.progress-bar {
+  width: 100%;
+  background: rgba(0,0,0,0.3);
+  border-radius: 8px;
+  overflow: hidden;
+  height: 10px;
+  margin-top: 10px;
+}
+
+.progress {
+  height: 100%;
+  background: #00ffea;
+  width: 0%;
+  transition: width 0.4s ease;
+}
+
+/* ❌ Delete Button */
+.delete-btn {
+  background: #ff4141;
+  color: white;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  float: right;
+}
+
+.delete-btn:hover {
+  background: #ff1a1a;
+}
